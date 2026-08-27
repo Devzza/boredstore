@@ -52,7 +52,6 @@ export default function Home() {
          <a href="https://boredonchain.com"> BoredOnChain </a>
         </div>
 
-
 {/* DINS DE BUTTON: onClick={() => inputRef.current?.click()} */}
         <button
           
@@ -174,10 +173,10 @@ export default function Home() {
               )}
             </div>
 
-            {/* text centrat a sota */}
+            {/* text centrat a sota 
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.2em] text-black/40 whitespace-nowrap">
               Make yours on <b>boredonchain.com</b>
-            </div>
+            </div>*/}
           </div>
         </div>
 
