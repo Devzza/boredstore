@@ -172,7 +172,7 @@ export default function Home() {
 
             {/* text centrat a sota */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.2em] text-black/40 whitespace-nowrap">
-              Create yours on <b>boredonchain.com</b>
+              Make yours on <b>boredonchain.com</b>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.2em] text-black/40 whitespace-nowrap">
-              Create yours on <b>boredonchain.com</b>
+              Make yours on <b>boredonchain.com</b>
             </div>
           </div>
         </div>
