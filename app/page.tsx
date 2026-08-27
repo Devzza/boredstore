@@ -45,18 +45,20 @@ export default function Home() {
 
 
   return (
-    <main className="min-h-screen bg-[#f4f1ea] text-black">
+    <main className="min-h-screen bg-[#0000ff] text-white">
       {/* NAV */}
       <nav className="flex items-center justify-between px-6 py-5 md:px-10">
         <div className="text-xl font-black tracking-[-0.05em]">
-          BoredOnChain
+         <a href="https://boredonchain.com"> BoredOnChain </a>
         </div>
 
+
+{/* DINS DE BUTTON: onClick={() => inputRef.current?.click()} */}
         <button
-          onClick={() => inputRef.current?.click()}
-          className="rounded-full bg-black px-5 py-3 text-sm font-bold text-white transition hover:scale-105"
+          
+          className="rounded-full bg-[#fff200] px-5 py-3 text-sm font-bold text-black transition hover:scale-105"
         >
-          Customize
+          Connect soon
         </button>
       </nav>
 
@@ -64,7 +66,7 @@ export default function Home() {
       <section className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-10 px-6 py-10 md:grid-cols-2 md:px-10">
         {/* LEFT */}
         <div className="mx-auto flex max-w-xl flex-col items-center text-center md:mx-0 md:items-start md:text-left">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-black/50">
+          <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#fff200]">
             Custom sunnies
           </p>
 
@@ -76,7 +78,7 @@ export default function Home() {
             PFP.
           </h1>
 
-          <p className="mt-8 max-w-md text-lg leading-relaxed text-black/60">
+          <p className="mt-8 max-w-md text-lg leading-relaxed text-white">
             Upload your PFP. Preview your sunnies. 
             Share them. Buy them. Love them and rock your PFP anywhere.
           </p>
@@ -90,7 +92,7 @@ export default function Home() {
               {/* BOTÓ SUPERIOR */}
               <button
                 onClick={() => inputRef.current?.click()}
-                className="w-full rounded-full bg-black py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:scale-105"
+                className="w-full rounded-full bg-[#fff200] py-4 text-sm font-bold uppercase tracking-wide text-black transition hover:scale-105"
               >
                 Upload your image →
               </button>
@@ -99,14 +101,16 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-3 w-full">
                 <button
                   onClick={handleDownload}
-                  className="w-full rounded-full border border-black/20 py-3 text-xs font-bold uppercase tracking-wider text-center transition hover:bg-black hover:text-white"
+                  className="w-full rounded-full border border-3 border-[#fff200] py-3 text-xs font-bold uppercase tracking-wider text-center transition hover:bg-[#fff200] hover:text-black"
                 >
                   Download
                 </button>
 
+           
+                 {/*  href="#" */}
                 <a
-                  href="#"
-                  className="w-full rounded-full bg-black/5 py-3 text-xs font-bold uppercase tracking-wider text-center text-black/40 transition hover:bg-black/10 flex items-center justify-center"
+              
+                  className="w-full rounded-full bg-white/50 py-3 text-xs font-bold uppercase tracking-wider text-center text-black/40 transition hover:bg-black/10 flex items-center justify-center"
                 >
                   Buy Soon
                 </a>
@@ -180,9 +184,9 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="flex flex-col justify-between gap-4 px-6 py-8 text-xs font-bold uppercase tracking-wider text-black/40 md:flex-row md:px-10">
-        <span>BOREDONCHAIN</span>
-        <span>Made for real degens</span>
+      <footer className="flex flex-col justify-between gap-4 px-6 py-8 text-xs font-bold uppercase tracking-wider text-[#fff200] md:flex-row md:px-10">
+        <a href="https://boredonchain.com">BOREDONCHAIN</a>
+        <a href="https://x.com/0xPizzaHat">Made for real degens 🍕</a>
       </footer>
 
       {/* FINESTRA MODAL DE PREVISUALITZACIÓ GEGANT */}
