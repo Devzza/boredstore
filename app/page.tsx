@@ -52,9 +52,7 @@ export default function Home() {
          <a href="https://boredonchain.com"> BoredOnChain </a>
         </div>
 
-{/* DINS DE BUTTON: onClick={() => inputRef.current?.click()} */}
         <button
-          
           className="rounded-full bg-[#fff200] px-5 py-3 text-sm font-bold text-black transition hover:scale-105"
         >
           Connect soon
@@ -105,10 +103,7 @@ export default function Home() {
                   Download
                 </button>
 
-           
-                 {/*  href="#" */}
                 <a
-              
                   className="w-full rounded-full bg-white/50 py-3 text-xs font-bold uppercase tracking-wider text-center text-black/40 transition hover:bg-black/10 flex items-center justify-center"
                 >
                   Buy Soon
@@ -129,7 +124,6 @@ export default function Home() {
 
 
         {/* RIGHT / PRODUCT (CANVAS CLICABLE) */}
-        {/* Afegim el click aquí i la classe cursor-pointer per millorar l'experiència d'usuari */}
         <div 
           onClick={() => setIsPreviewOpen(true)}
           className="relative w-full max-w-[550px] mx-auto aspect-square cursor-pointer transition hover:opacity-95"
@@ -173,10 +167,10 @@ export default function Home() {
               )}
             </div>
 
-            {/* text centrat a sota 
+            {/* text centrat a sota */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.2em] text-black/40 whitespace-nowrap">
-              Make yours on <b>boredonchain.com</b>
-            </div>*/}
+              boredonchain.com
+            </div>
           </div>
         </div>
 
@@ -188,11 +182,11 @@ export default function Home() {
         <a href="https://x.com/0xPizzaHat">Made for real degens 🍕</a>
       </footer>
 
-      {/* FINESTRA MODAL DE PREVISUALITZACIÓ GEGANT */}
+      {/* FINESTRA MODAL DE PREVISUALITZACIÓ GEGANT NETEJA */}
       {isPreviewOpen && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm transition-opacity"
-          onClick={() => setIsPreviewOpen(false)} // Es tanca clicant fora
+          onClick={() => setIsPreviewOpen(false)}
         >
           {/* Botó de tancar */}
           <button 
@@ -205,7 +199,7 @@ export default function Home() {
           {/* Contingut en gran adaptat a la pantalla */}
           <div 
             className="relative flex aspect-square w-full max-w-[85vh] items-center justify-center overflow-hidden rounded-[2rem] bg-[#d8d4ca] shadow-2xl"
-            onClick={(e) => e.stopPropagation()} // Evita tancar la modal si es clica a dins
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="absolute h-[75%] w-[75%] rounded-full bg-[#c4c0b6]" />
 
@@ -220,11 +214,11 @@ export default function Home() {
                 <div
                   className="absolute z-30 overflow-hidden rounded-full"
                   style={{
-                    width: "3.8%",
+                    width: "4%",
                     aspectRatio: "1",
                     left: "63.5%",
                     top: "39.5%",
-                    transform: "perspective(500px) rotateY(-50deg) rotateZ(-2deg) translateX(12cqw) translateY(6cqw)",
+                    transform: "perspective(500px) rotateY(-50deg) rotateZ(-2deg) translateX(12cqw) translateY(6.5cqw)",
                   }}
                 >
                   <img
@@ -236,9 +230,11 @@ export default function Home() {
               )}
             </div>
 
+            {/* text centrat a sota de la modal en gran */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-[0.2em] text-black/40 whitespace-nowrap">
-              Make yours on <b>boredonchain.com</b>
+              boredonchain.com
             </div>
+
           </div>
         </div>
       )}
